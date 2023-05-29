@@ -1,0 +1,73 @@
+Emmet:
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow.
+Emmet (for HTML, CSS, JSX) is a built-in feature of VS Code.
+Emmet is written in pure JavaScript and works across different platforms: web browser, Node.js, Microsoft WSH and Mozilla Rhino.
+It allows you to type shortcuts that are then expanded into full pieces of code.
+Also relying on Emmet's auto completion means fewer typos and missing tags, leading to more robust and valid files.
+It's free.
+
+Exaample:
+"""
+Child: >
+nav>ul>li
+
+ <nav>
+ <ul>
+ <li></li>
+ </ul>
+ </nav>
+Sibling: +
+div+p+bq
+ <div></div>
+ <p></p>
+ <blockquote></blockquote>
+ """
+
+Difference b/w library & framework:
+Both are written by someone else to solve common/tedious problems in a less verbose way.
+Both are reusable.
+With frameworks you've to fill in the blanks; with libraries you decide where to insert the code block.
+Library gives you more control than a framework.
+
+CDN & it's usage:
+A CDN is a content delivery network.
+A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
+It is a system of computers that are connected to each other and work together to deliver content to users. A CDN can deliver content faster and more reliably than a single computer.
+
+Examples:
+Akamai.
+Amazon CloudFront.
+CacheFly.
+CDN77.com.
+CloudFlare.
+
+Usage/Pros:
+A CDN improves efficiency by introducing intermediary servers between the client and the website server.
+These CDN servers manage some of the client-server communications.
+They decrease web traffic to the web server, reduce bandwidth consumption, and improve the user experience of your applications.
+
+Reasons behind the name "React":
+It's called React because it reacts.
+It responds dynamically to changes in the data.
+The name "React" also reflects the fact that the library is built around the concept of a unidirectional data flow, where changes in data flow down through the component hierarchy, triggering updates and re-renders as necessary. This approach helps to avoid common issues with two-way data binding, such as performance problems and hard-to-debug code.
+
+Cross-origin in the script tag:
+It provides support for CORS.
+The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+It can have values such as anaonymous (default/fallback option), blank string, use-credentials.
+It can also be added to img, media, video, audio, link tags
+
+Difference b/w React & ReactDOM:
+The react package holds the react source for components, state, props and all the code that is react.
+The react-dom package as the name implies is the glue between React and the DOM. Often, you will only use it for one single thing: mounting your application to the index.html file with ReactDOM.render().
+The reason React and ReactDOM were split into two libraries was due to the arrival of React Native (A react platform for mobile development).
+React components are such a great way to organize UI that it has now spread to mobile to react is used in web and in mobile. react-dom is used only in web apps.
+(setNativeProps is the React Native equivalent to setting properties directly on a DOM node. Use setNativeProps when frequent re-rendering creates a performance bottleneck!)
+
+React dev vs prod:
+The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+The production build, on the other hand, runs in production mode which means this is the code running on your client's machine. The production build runs uglify and builds your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. There's also no hot reloading included. Source Maps might be included as separate files depending on your webpack devtool settings.
+
+Async vs Defer:
+Async allows your script to run as soon as it's loaded, without blocking other elements on the page. Defer means your script will only execute after the page has finished loading
