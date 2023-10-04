@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import ContextDemo from "./ContextDemo";
 
 // const heading = React.createElement("h1", {
 //     id: "heading"
@@ -25,23 +26,33 @@ import ReactDOM from "react-dom/client";
 //     return <h1>React Component</h1>
 //  }
 
-const Header = () => {
-    return (
-        <div className="header">
+// const Header = () => {
+//     return (
+//         <div className="header">
 
-        </div>
-    )
+//         </div>
+//     )
+// }
+
+// const AppLayout = () => {
+//     return (
+//         <div>
+//             <Header />
+//         </div>
+//     )
+// }
+
+const App = () => {
+  return (
+    <>
+        <div>App</div>
+        <ContextDemo />
+    </>
+  )
 }
 
-const AppLayout = () => {
-    return (
-        <div>
-            <Header />
-        </div>
-    )
-}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // this replaces whatever is present inside the root element with parent
 // root.render(heading);
-root.render(<AppLayout />)
+root.render(<App />)
