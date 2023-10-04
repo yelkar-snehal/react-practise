@@ -1,6 +1,6 @@
 # React Practise
 
-# Parcel Usage
+## Parcel Usage
 
 - Dev Build
 - Local Server
@@ -19,4 +19,8 @@
 - HTTPS
 - Tree Shaking (Remove unused code)
 - Different dev and prod build
--
+
+## Babel Usage
+
+- JSX code transpilation (Abstract Syntax Tree)
+- ES6 code transpilation to browser-compatible code
